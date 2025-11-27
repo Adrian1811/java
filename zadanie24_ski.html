@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+ <head>
+ <title> Użycie fukcji </title>
+ <meta charset="utf-8">
+ </head>
+<body>
+ <div style="color:blue;font-size:50px;">
+ <script language="JavaScript">
+ var x1_ski=parseFloat(prompt("x1=",""));
+ var x2_ski=parseFloat(prompt("x2=",""));
+
+ function y1_ski(x1) {
+ return 3 * Math.pow(x1_ski, 6/8);
+ 
+}
+
+function x1_rad(x1) {
+var st_ski=x1_ski;
+return (st_ski * Math.PI) / 180;
+
+}
+
+function y2_ski(x1){
+var st_ski=x1_ski;
+var rad_ski=(st_ski * Math.PI) / 180;
+return 2 * Math.cos(rad_ski) + 3 * Math.sin(rad_ski);
+}
+
+function y3_ski(x1,x2) {
+var x1_5= Math.pow(x1_ski, 5);
+var x2_4= Math.pow(x2_ski, 4);
+var x1_x2= Math.abs(x1_ski - x2_ski);
+var pierwiastek= Math.cbrt(x1_5 + 2 * x2_4);
+return pierwiastek * x1_x2;
+}
+
+var y1_wynik =y1_ski(x1_ski);
+var y2_wynik =y2_ski(x1_ski);
+var y3_wynik =y3_ski(x1_ski,x2_ski);
+var x1_radiany= x1_rad(x1_ski);
+
+document.write("x1= " +x1_ski+"&nbsp&nbsp&nbsp&nbsp&nbsp");
+document.write("x2= " +x2_ski+"<br>");
+document.write("x1(stopnie)= " +x1_ski+"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp");
+document.write("x1(radiany)= " +x1_radiany.toFixed(2)+"<br>");
+document.write("y1= " +y1_wynik.toFixed(2)+"<br>");
+document.write("y2= " +y2_wynik.toFixed(2)+"<br>");
+document.write("y3= " +y3_wynik.toFixed(2)+"<br>");
+
+</script>
+</div>
+</body>
+</html>

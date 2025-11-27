@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+ <head>
+ <title> Użycie fukcji </title>
+ <meta charset="utf-8">
+ </head>
+<body>
+ <div style="color:navy;font-size:50px;">
+ <script language="JavaScript">
+ var a=parseFloat(prompt("a=",""));
+ var b=parseFloat(prompt("b=",""));
+
+ function suma_ski(a, b) {
+ return a + b;
+}
+
+function odejmowanie_ski(a, b) {
+ return a - b;
+}
+
+function mnozenie_ski(a, b) {
+ return a * b;
+}
+
+function kwadrat_ski(a) {
+ return a*a;
+}
+
+function kwadrat_ski(b) {
+ return b*b;
+}
+
+function dzielenie_ski(a, b) {
+ return a % b;
+}
+
+ document.write("suma="+suma_ski(a,b)+"<br>");
+document.write("odejmowanie="+odejmowanie_ski(a,b)+"<br>");
+document.write("mnozenie="+mnozenie_ski(a,b)+"<br>");
+document.write(+a+"^2="+kwadrat_ski(a)+"<br>");
+document.write(+b+"^2="+kwadrat_ski(b)+"<br>");
+document.write("reszta z dzielenia="+dzielenie_ski(a,b)+"<br>");
+
+</script>
+</div>
+</body>
+</html>

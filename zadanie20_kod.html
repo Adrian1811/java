@@ -1,0 +1,79 @@
+<html>
+ <body>
+ <textarea cols="90" rows="24">
+<html>
+<head>
+ <meta charset="UTF-8">
+ <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+<script type="text/javascript">
+
+
+ function AB_ski()
+ {
+var xa_ski= parseFloat(document.getElementById('xa_ski').value);
+var xb_ski= parseFloat(document.getElementById('xb_ski').value);
+var ya_ski= parseFloat(document.getElementById('ya_ski').value);
+var yb_ski= parseFloat(document.getElementById('yb_ski').value);
+
+ var x= xa_ski - xb_ski;
+ var y= ya_ski - yb_ski;
+ var x_kwadrat= Math.pow(x,2);
+ var y_kwadrat= Math.pow(y,2);
+ var suma_kw= x_kwadrat + y_kwadrat;
+ var pierwiastek=Math.sqrt(suma_kw);
+document.getElementById("nazwa").innerHTML ="pole AB= "+pierwiastek+" cm"
+}
+ 
+function AC_ski()
+ {
+var xa_ski= parseFloat(document.getElementById('xa_ski').value);
+var xc_ski= parseFloat(document.getElementById('xc_ski').value);
+var ya_ski= parseFloat(document.getElementById('ya_ski').value);
+var yc_ski= parseFloat(document.getElementById('yc_ski').value);
+
+ var x= xa_ski - xc_ski;
+ var y= ya_ski - yc_ski;
+ var x_kwadrat= Math.pow(x,2);
+ var y_kwadrat= Math.pow(y,2);
+ var suma_kw= x_kwadrat + y_kwadrat;
+ var pierwiastek=Math.sqrt(suma_kw);
+document.getElementById("nazwa").innerHTML ="pole AC= "+pierwiastek+" cm"
+}
+
+function BC_ski()
+ {
+var xb_ski= parseFloat(document.getElementById('xb_ski').value);
+var xc_ski= parseFloat(document.getElementById('xc_ski').value);
+var yb_ski= parseFloat(document.getElementById('yb_ski').value);
+var yc_ski= parseFloat(document.getElementById('yc_ski').value);
+
+ var x= xb_ski - xc_ski;
+ var y= yb_ski - yc_ski;
+ var x_kwadrat= Math.pow(x,2);
+ var y_kwadrat= Math.pow(y,2);
+ var suma_kw= x_kwadrat + y_kwadrat;
+ var pierwiastek=Math.sqrt(suma_kw);
+document.getElementById("nazwa").innerHTML ="pole BC= "+pierwiastek+" cm"
+}
+
+
+ 
+</script>
+ 
+ Podaj długość boku xa: <input type="text" id="xa_ski"> cm &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+Podaj długość boku ya: <input type="text" id="ya_ski" > cm<br><br><br>
+Podaj długość boku xb: <input type="text" id="xb_ski" > cm&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+Podaj długość boku yb: <input type="text" id="yb_ski" > cm<br><br><br>
+Podaj długość boku xc: <input type="text" id="xc_ski" > cm&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+Podaj długość boku yc: <input type="text" id="yc_ski" > cm<br><br><br>
+ <input type="button" name="AB" value="Długość AB" Onclick="AB_ski()"><br><br>
+<input type="button" name="AC" value="Długość AC" Onclick="AC_ski()"><br><br>
+<input type="button" name="BC" value="Długość BC" Onclick="BC_ski()"><br><br>
+ <div style="color:red;font-size:50px;"id="nazwa"></div>
+</body>
+</html>
+</textarea>
+ </body>
+</html>
