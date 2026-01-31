@@ -1,0 +1,31 @@
+<html>
+ <head>
+ <script type="text/javascript">
+var mebel = {
+rodzaj: 'Szafa',
+kolor: 'Brązowy',
+wysokosc: '210 cm',
+mebel_pokaz_skierka: function ()
+{
+ document.write(this.rodzaj + ' ' + this.kolor + ' ' + this.wysokosc)
+ }
+}
+mebel.mebel_pokaz_skierka();
+mebel.cena=1200;
+mebel.mebel_wypisz_skierka=function() {alert('Cena: ' + this.cena + 'zł')}
+mebel.mebel_wypisz_skierka();
+ </script>
+ </head>
+<body>
+<br>
+ Programowanie obiektowe. <br>
+ Obiekt to mebel<br>
+ Pola:<br>
+ rodzaj<br>
+ kolor<br>
+ wysokosc<br>
+ metoda: mebel_pokaz_skierka<br>
+ nowe pole to cena <br>
+ nowa metoda to mebel_wypisz_skierka();<br>
+</body>
+</html>
