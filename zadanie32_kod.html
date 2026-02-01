@@ -1,0 +1,38 @@
+<html>
+ <body>
+ <textarea cols="90" rows="24">
+<html>
+ <head>
+ <script type="text/javascript">
+ function mebel(rodzaj_k,kolor_k,wysokosc_k,material_k)//początek konstruktora
+{
+this.rodzaj=rodzaj_k;
+this.kolor=kolor_k;
+this.wysokosc=wysokosc_k;
+this.material=material_k;
+}//koniec konstruktora
+ mebel.prototype.wypisz = function () //definicja metody
+ {
+ alert(this.rodzaj + ' ' + this.kolor+ ' ' + this.wysokosc);
+ };
+var mebel1 = new mebel("Szafa", "Brązowy", "210 cm", "Drewno"); // nowy obiekt mebel1
+var mebel2 = new mebel('Biurko', 'Czarny', '100 cm', 'Metal');
+var mebel3 = new mebel('Krzeslo','Bialy', '67 cm', 'Plastik');
+mebel1.wypisz(); // uruchomienie metody wypisz() dotyczącej mebel 1
+mebel2.wypisz();
+mebel3.wypisz();
+ document.write("dostęp do właściwości"+"<br>");
+// poniżej dostęp do pól mebeli
+ document.write("mebel pierwszy"+" "+mebel1.rodzaj+" "+mebel1.kolor+" "+mebel1.wysokosc+" "+mebel1.material+"<p>");
+document.write("mebel drugi"+" "+mebel2.rodzaj+" "+mebel2.kolor+" "+mebel2.wysokosc+" "+mebel2.material+"<p>");
+document.write("mebel trzeci"+" "+mebel3.rodzaj+" "+mebel3.kolor+" "+mebel3.wysokosc+" "+mebel3.material+"<p>");
+ </script>
+ </head>
+<body>
+<br>
+ programowanie obiektowe
+</body>
+</html>
+</textarea>
+ </body>
+</html>
